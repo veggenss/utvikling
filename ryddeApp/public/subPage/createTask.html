@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <title>Rydde hjelper</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="../js/createTask.js" defer></script>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../tasks.html">Oppgaver</a></li>
+            <li><a href="../podium.html">Podium</a></li>
+            <li><a href="../family.html">Familie</a></li>
+            <li><a href="../profile.html">Profil</a></li>
+        </ul>
+    </nav>
+
+    <div class="wrapper">
+        <div class="main-con">
+            <form id="create-form" class="form create">
+                <div class="header-con">
+                    <h2 class="header-title">Opprett Oppgave</h2>
+                    <button class="header-btn" type="submit">Opprett</button>
+                </div>
+
+                <div class="create-row">
+                    <div class="create-field left">
+                        <label class="form-label" >Navn</label>
+                        <input name="name" class="form-input" placeholder="f.eks: Stua er skitten" required>
+                    </div>
+                    <div class="create-field right">
+                        <label class="form-label create-right" >Vanskelighet</label>
+                        <select name="difficulty" class="create-select create-right" id="create-difficulty" required>
+                            <option value="1">I</option>
+                            <option value="2">II</option>
+                            <option value="3">III</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+
+                <div class="create-row">
+                    <div class="create-field left">
+                        <label class="form-label" >Beskrivelse</label>
+                        <input name="description" class="form-input" placeholder="f.eks: Du må rengjøre ALT HELE HUSET" required>
+                    </div>
+
+                    <div class="create-field right">
+                    <label class="form-label" >Kategori</label>
+                        <select name="category" class="create-select" id="create-category" required>
+                            <option value="1">Rydding</option>
+                            <option value="2">Vasking</option>
+                            <option value="3">Innkjøp</option>
+                            <option value="4">Planlegging</option>
+                            <option value="5">Passing</option>
+                            <option value="6">Annet</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
